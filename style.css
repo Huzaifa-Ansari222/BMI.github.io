@@ -1,0 +1,91 @@
+body{
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.441), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.container {
+    border: 1px solid white;
+    border-radius: 30px;
+    /* background-color: grey; */
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(245, 245, 245, 0.244);
+    backdrop-filter: blur(100px);
+    }
+#height,#weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+}
+
+#weight-guide {
+    text-align: center;
+    /* margin-left: 75px; */
+    margin-top: 25px;
+}
+#results {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(69, 57, 57);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    animation: glow 2s infinite;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff;
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+    }
+}
+button {
+    width: 160px;
+    height: 35px;
+    margin-left: 20%;
+    margin-top: 25px;
+    background-color: #ffffff00;
+    padding: 1px 30px;
+    border-radius: 300px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    font-size: 22px;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+h1 {
+    /* padding-left: px; */
+    padding-top: 25px;
+    
+}
+input{
+    background-color:rgb(255, 255, 255) ;
+    color:grey;
+    border-style: none;
+    border-radius: 200px;
+    text-align: center;
+}
+input:focus {
+    outline: none; /* Remove the default focus outline */
+}
